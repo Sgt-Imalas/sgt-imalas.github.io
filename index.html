@@ -6,11 +6,15 @@
     <title>Sgt_Imalas Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        :root {
+            --bgColor: #232327;
+            --fgColor: #ffffff;
+        }
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            color: #fff
-            background-color: #444;
+            color: var(--bgColor);
+            background-color: var(--fgColor);
             margin: 0;
             padding: 0;
             display: flex;
@@ -49,16 +53,16 @@
             padding: 10px 10px;
             font-size: 18px;
             border-radius: 5px;
-            background-color: #fff;
-            color: #000;
+            color: var(--bgColor);
+            background-color: var(--fgColor);
             width: 200px;
-            border: 2px solid #000;
+            border: 2px solid var(--fgColor);
             transition: background-color 0.3s, color 0.3s;
         }
 
         .button:hover {
-            background-color: #000;
-            color: #fff;
+            background-color: var(--bgColor);
+            color: var(--fgColor);
         }
 
         .button i {
@@ -80,8 +84,8 @@
             padding: 5px;
             font-size: 22px;
             border-radius: 5px;
-            background-color: #fff;
-            color: #fff;
+            background-color: var(--bgColor);
+            color: var(--fgColor);
             border: 0;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -97,13 +101,18 @@
     </style>
 </head>
 <body>
-
+<img id="avatar" src="https://avatars.githubusercontent.com/u/20609939?v=4" alt="Sgt_Imalas">
 <div id="name">Sgt_Imalas</div>
-
+<div id="social-media-buttons">
+    <a href="https://github.com/Sgt-Imalas" target="_blank" class="social-button"><i class="fa-brands fa-github"></i></i></a>
+    <a href="https://steamcommunity.com/id/Sgt_Imalas/" target="_blank" class="social-button"><i class="fa-brands fa-steam"></i></i></a>
+    <a href="https://www.patreon.com/c/Sgt_Imalas" target="_blank" class="social-button"><i class="fa-brands fa-patreon"></i></a>
+    <a href="https://ko-fi.com/sgtimalas" target="_blank" class="social-button"><i class="fa-solid fa-mug-hot"></i></a>
+</div>
 <div id="links">
-    <a href="https://steamcommunity.com/id/Sgt_Imalas/myworkshopfiles/?p=1&numperpage=30" target="_blank" class="button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png" width=22 height=22></img>ONI&nbsp;Steam&nbsp;Workshop</a>
+    <a href="https://steamcommunity.com/id/Sgt_Imalas/myworkshopfiles/?p=1&numperpage=30" target="_blank" class="button"><i class="fa-brands fa-steam"></i></img>ONI&nbsp;Steam&nbsp;Workshop</a>
     <a href="https://github.com/Sgt-Imalas/Sgt_Imalas-Oni-Mods" target="_blank" class="button"><i class="fab fa-github"></i>&nbsp;ONI&nbsp;Mods&nbsp;Repository</a>
-    <a href="https://sgt-imalas.github.io/Wiki/" target="_blank" class="button"><i class="fab fa-github"></i>&nbsp;Mods&nbsp;Wiki</a>
+    <!--<a href="https://sgt-imalas.github.io/Wiki/" target="_blank" class="button"><i class="fab fa-github"></i>&nbsp;Mods&nbsp;Wiki</a>-->
     <a href="https://sgt-imalas.github.io/TraitFinder/" target="_blank" class="button"><i class="fab fa-github"></i>ONI&nbsp;Trait&nbsp;Finder</a>
 </div>
 
